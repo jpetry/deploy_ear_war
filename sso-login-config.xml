@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<config version="1">
+    <!-- config values that should be unique per instance -->
+    <failoverMessage>primary</failoverMessage>
+    <!-- config values likely to change -->
+    <urls>
+        <authFormTarget>https://ChromeHostname:14101/oam/server/auth_cred_submit</authFormTarget>
+        <pkiCredCollector>https://ChromeHostname:14101/oam/CredCollectServlet/X509</pkiCredCollector>
+        <resetPassword>http://ChromeHostname:8888/chrome/reset</resetPassword>
+        <signup>http://ChromeHostname:8888/chrome/signup</signup>
+    </urls>
+    <!-- config values that you'll likely change just once -->
+    <copyrightOwner>Agency.gov</copyrightOwner>
+    <loginBanner><![CDATA[
+            This is a secure system. Use it seriously, no playing around.
+            ]]></loginBanner>
+    <securityBanner><![CDATA[
+            Unclassified and awesome.
+            ]]></securityBanner>
+    <!-- config values you should not change -->
+    <urlEncoding>UTF-8</urlEncoding>
+    <requestedUrlParameter>resource_url</requestedUrlParameter>
+</config>
